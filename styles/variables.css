@@ -1,39 +1,5 @@
 /* MAIN - DARK, MOBILE*/
 
 :root {
-  --title-color: #db00ff;
-  --accent-color: #ff0070;
-  --highligt-color: #ff0070;
-  --heading-text-color: #000028;
-  --section-text-color: #f1b2ce;
-  --background-color: #000028;
-
-  --accent-color-hover: #ff007066;
-
-  --background-image: url("../images/cover-image-dark.png");
-
-  --font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-
-  --decor-visible: flex;
-
-  /*--------------------------------------------*/
-
-  --main-title-header-margin: 0;
-
-  --space-between-elements: 10px;
-  --margin-block-end-header-aside: 40px;
-  --margin-block-end-section: 50px;
-
-  --title-header-width: 355px;
-  --main-section__block__title-width: 355px;
-
-  /*-------------------------------------------*/
-
-  --menu-flex-direction: column;
-
-  --main-section-flex-direction: column; /* заголовок-блоки*/
-  --main-section__block-flex-direction: column; /*блоки между собой*/
-
-  --main-section-specific-flex-direction: column; /*для специфичного выравнивания секции */
-  --main-section__block-specific-flex-direction: column; /*для специфичного выравнивания блока */
+ 
 }
