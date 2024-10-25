@@ -4,16 +4,13 @@ html {
 }
 
 .page {
-  position: relative;
-  width: calc(100% - 180px);
-  padding: calc(var(--view-vertical-margin) + 75px) var(--padding)
-    var(--view-vertical-margin) var(--padding);
+  padding: var(--view-vertical-margin) var(--view-horizontal-margin)
+    var(--view-vertical-margin) var(--view-horizontal-margin);
   color: var(--text-color);
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 20px;
   background-color: var(--backhround-color);
 }
 
@@ -47,7 +44,7 @@ html {
 .theme-toggle_button {
   position: fixed;
   top: var(--view-vertical-margin);
-  right: calc(var(--view-horizontal-margin) + var(--padding));
+  right: calc(var(--view-horizontal-margin) - var(--button-position));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +61,7 @@ html {
 
 .up-button {
   position: fixed;
-  right: calc(var(--view-horizontal-margin) + var(--padding));
+  right: calc(var(--view-horizontal-margin) - var(--button-position));
   bottom: var(--view-vertical-margin);
   display: none;
   justify-content: center;
