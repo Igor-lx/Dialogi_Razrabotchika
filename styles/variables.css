@@ -1,5 +1,15 @@
 /* MAIN - DARK, MOBILE*/
 
 :root {
- 
+  --accent-color: black;
+  --accent-color__dark-theme: rgba(24, 217, 27, 0.9);
+
+  --accent-color_focus-color: lightgray;
+  --accent-color__dark-theme_focus-color: rgba(24, 217, 27, 0.5);
+
+  --text-color: #545454;
+  --text-color__dark-theme: #fefdf6;
+
+  --backhround-color: #fefdf6;
+  --backhround-color__dark-theme: #000;
 }

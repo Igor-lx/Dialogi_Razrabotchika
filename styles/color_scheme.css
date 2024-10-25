@@ -1,21 +1,15 @@
 /*
-
-@media (prefers-color-scheme: light) {
-  :root {
-  }
-}
-  */
-
 .page.light_theme {
-  --theme-icon-color: black;
-  --theme-icon-focus-color: lightgray;
-  color: #545454;
-  background-color: #fefdf6;
-}
+  --theme-icon-color: var(--theme-icon__light-theme_color);
+  --theme-icon-focus-color: var(--theme-icon__light-theme_focus-color);
+  color: var(--light-teme__text_color);
+  background-color: var(--light-teme__bg_color);
+  
+} */
 
 .page.dark_theme {
-  --theme-icon-color: rgba(24, 217, 27, 0.9);
-  --theme-icon-focus-color: rgba(24, 217, 27, 0.3);
-  color: white;
-  background-color: black;
+  --accent-color: var(--accent-color__dark-theme);
+  --accent-color_focus-color: var(--accent-color__dark-theme_focus-color);
+  --text-color: var(--text-color__dark-theme);
+  --backhround-color: var(--backhround-color__dark-theme);
 }

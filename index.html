@@ -9,9 +9,9 @@
 
     <title>Диалоги Разработчика</title>
 
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    <link rel="icon" href="./images/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="./images/.favicon/mobile-icon.png" />
 
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -25,9 +25,9 @@
 
   <body class="page light_theme">
     <header class="header">
-      <button class="theme-toggle_button">
+      <button type="button" id="theme-button" class="theme-toggle_button">
         <svg class="theme_icon" viewBox="0 0 24 24">
-          <use xlink:href="./images/themes.svg#auto"></use>
+          <use xlink:href="./images/svg/themes.svg#auto"></use>
         </svg>
       </button>
 
@@ -42,6 +42,18 @@
     <footer class="footer">
       <p class="footer__copyright">© 2024 Dialogi-LX</p>
     </footer>
+
+    <!-- ---------------------------------- back to top button -------------------------------------------- -->
+    <button
+      type="button"
+      id="up-button"
+      class="up-button"
+      onclick="location.href='#top'"
+    >
+      <svg class="up_icon" viewBox="0 0 24 24">
+        <use xlink:href="./images/svg/arrow-up.svg#up"></use>
+      </svg>
+    </button>
 
     <!-- --------------------------------------------------------------------------------------------------- -->
 

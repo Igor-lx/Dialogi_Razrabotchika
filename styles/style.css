@@ -1,38 +1,68 @@
 /* MAIN - DARK, MOBILE */
+html {
+  scroll-behavior: smooth;
+}
 
 .page {
+  position: relative;
+  width: calc(100% - 180px);
+  border-right: 1px solid var(--accent-color_focus-color);
+  border-left: 1px solid var(--accent-color_focus-color);
+  padding: 0 20px 20px;
+  color: var(--text-color);
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 20px;
+  background-color: var(--backhround-color);
 }
 
 /* --------------------------------------------------------------------- */
 .header {
   display: grid;
-  grid-template-rows: 300px auto;
-  padding-top: 50px;
-  block-size: 80vh;
+  grid-template-rows: 200px auto;
+  block-size: 300vh;
 }
 /* --------------------------------------------------------------------- */
 
 /* --------------------------------------------------------------------- */
 .theme-toggle_button {
-  justify-self: end;
-  width: 100px;
-  height: 100px;
-  border: none;
-  padding: 10px;
+  position: fixed;
+  top: 30px;
+  right: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  border: 1px solid transparent;
   background-color: transparent;
 }
 
 .theme_icon {
-  fill: var(--theme-icon-color);
-  transition: transform 0.2s linear;
   border: 1px solid transparent;
+  fill: var(--accent-color);
+  transition: transform 0.2s linear;
 }
 
+.up-button {
+  position: fixed;
+  right: 110px;
+  bottom: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.up_icon {
+  width: 37px;
+  border: 1px solid transparent;
+  stroke: var(--accent-color);
+  transition: transform 0.2s linear;
+}
 /* --------------------------------------------------------------------- */
 
 /* --------------------------------------------------------------------- */
@@ -47,14 +77,27 @@
 /*--------------------состояния----------------------*/
 
 .theme-toggle_button:hover .theme_icon {
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.up-button:hover:hover .up_icon {
+  transform: scale(1.2);
 }
 
 .theme-toggle_button:focus {
   outline: none;
 }
 
-.theme-toggle_button:focus-visible .theme_icon {
-  border-right: 1px solid var(--theme-icon-focus-color);
-  border-left: 1px solid var(--theme-icon-focus-color);
+.up-button:focus {
+  outline: none;
+}
+
+.theme-toggle_button:focus-visible {
+  border-right: 1px solid var(--accent-color_focus-color);
+  border-left: 1px solid var(--accent-color_focus-color);
+}
+
+.up-button:focus-visible {
+  border-right: 1px solid var(--accent-color_focus-color);
+  border-left: 1px solid var(--accent-color_focus-color);
 }
