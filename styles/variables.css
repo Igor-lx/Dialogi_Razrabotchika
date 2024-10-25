@@ -12,4 +12,8 @@
 
   --backhround-color: #fefdf6;
   --backhround-color__dark-theme: #000;
+
+  --view-vertical-margin: 50px;
+  --view-horizontal-margin: 80px;
+  --padding: 25px;
 }

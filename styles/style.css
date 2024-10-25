@@ -6,9 +6,8 @@ html {
 .page {
   position: relative;
   width: calc(100% - 180px);
-  border-right: 1px solid var(--accent-color_focus-color);
-  border-left: 1px solid var(--accent-color_focus-color);
-  padding: 0 20px 20px;
+  padding: calc(var(--view-vertical-margin) + 75px) var(--padding)
+    var(--view-vertical-margin) var(--padding);
   color: var(--text-color);
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
@@ -16,6 +15,24 @@ html {
   font-style: normal;
   line-height: 20px;
   background-color: var(--backhround-color);
+}
+
+.page::before,
+.page::after {
+  content: "";
+  position: fixed;
+  top: var(--view-vertical-margin);
+  bottom: var(--view-vertical-margin);
+  width: 1px;
+  background-color: var(--accent-color_focus-color);
+}
+
+.page::before {
+  left: var(--view-horizontal-margin);
+}
+
+.page::after {
+  right: var(--view-horizontal-margin);
 }
 
 /* --------------------------------------------------------------------- */
@@ -29,8 +46,8 @@ html {
 /* --------------------------------------------------------------------- */
 .theme-toggle_button {
   position: fixed;
-  top: 30px;
-  right: 110px;
+  top: var(--view-vertical-margin);
+  right: calc(var(--view-horizontal-margin) + var(--padding));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,8 +64,8 @@ html {
 
 .up-button {
   position: fixed;
-  right: 110px;
-  bottom: 40px;
+  right: calc(var(--view-horizontal-margin) + var(--padding));
+  bottom: var(--view-vertical-margin);
   display: none;
   justify-content: center;
   align-items: center;
@@ -68,7 +85,7 @@ html {
 /* --------------------------------------------------------------------- */
 .footer__copyright {
   margin: 0;
-  color: #545454;
+  color: var(--text-color);
   font-size: 20px;
   line-height: 24px;
 }
