@@ -8,7 +8,7 @@ function createButton(ButtonDataArray) {
   const svgUse = svg.querySelector("use");
 
   button.setAttribute("type", ButtonDataArray.type);
-  button.className = ButtonDataArray.buttonClass;
+  button.setAttribute("class", ButtonDataArray.buttonClass);
 
   if (ButtonDataArray.onclick) {
     button.setAttribute("onclick", ButtonDataArray.onclick);
