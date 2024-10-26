@@ -28,7 +28,9 @@ html {
   justify-content: center;
   align-items: center;
   border: 1px solid transparent;
+  width: 55px;
   background-color: transparent;
+  
 }
 
 .galaxy_button {

@@ -41,7 +41,7 @@
                 alt=""
               />
             </div>
-            <div class="story_section">
+            <div>
               <p class="story_text">Привет, Серёг!</p>
             </div>
           </li>
@@ -54,73 +54,21 @@
       <p class="footer__copyright">© 2024 Dialogi-LX</p>
     </footer>
 
-    <!-- ------------------------------------------------------------------------- ASIDE --------------------- -->
-    <aside>
-      <button
-        type="button"
-        class="wrapper-button galaxy_button upscreen_button"
-        tabindex="-1"
-        aria-hidden="true"
-      >
-        <svg class="aside_left_icon" viewBox="0 0 70 70">
-          <use xlink:href="./images/svg/galaxy.svg#galaxy"></use>
-        </svg>
-      </button>
-
-      <button
-        type="button"
-        class="wrapper-button theme-toggle_button upscreen_button"
-        aria-label="переключить тему"
-      >
-        <svg class="aside_right_icon theme_icon" viewBox="0 0 24 24">
-          <use xlink:href="./images/svg/themes.svg#auto"></use>
-        </svg>
-      </button>
-
-      <button
-        type="button"
-        class="wrapper-button copyright_button downscreen_button"
-        tabindex="-1"
-        aria-hidden="true"
-      >
-        <svg class="aside_left_icon" viewBox="0 0 36 32">
-          <use xlink:href="./images/svg/copyright.svg#copyright"></use>
-        </svg>
-      </button>
-
-      <button
-        type="button"
-        class="wrapper-button up-button downscreen_button"
-        aria-label="навех страницы"
-        onclick="location.href='#top'"
-      >
-        <svg class="aside_right_icon up_icon" viewBox="0 0 24 24">
-          <use xlink:href="./images/svg/arrow-up.svg#up"></use>
-        </svg>
-      </button>
-    </aside>
-
     <!-- ----------------------------------------------------------------------------------------------------- -->
+    <aside class="aside_area"></aside>
 
-    <!-- ----------------------------------------------------------------------- BUTTON template ------------- -->
-    <template>
-      <button
-        type=""
-        class=""
-        onclick=""
-        tabindex=""
-        aria-hidden=""
-        aria-label=""
-      >
-        <svg class="" viewBox="">
-          <use xlink:href=""></use>
+    <template id="button_template">
+      <button>
+        <svg>
+          <use></use>
         </svg>
       </button>
     </template>
-
     <!-- ----------------------------------------------------------------------------------------------------- -->
 
-    <script src="./scripts/themes.js"></script>
-    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/buttonAttributes.js" defer></script>
+    <script src="./scripts/createElements.js" defer></script>
+    <script src="./scripts/themes.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
   </body>
 </html>
