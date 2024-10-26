@@ -7,10 +7,8 @@ const buttonData = [
     tabindex: "-1",
     "aria-hidden": "true",
     svgClass: "aside_left_icon",
-    viewBox: "0 0 24 24",
-    //viewBox: "0 0 70 70",
-    svgHref: "./images/svg/themes.svg#auto",
-    //svgHref: "./images/svg/galaxy.svg#galaxy",
+    viewBox: "0 0 70 70",
+    svgHref: "./images/svg/galaxy.svg#galaxy",
   },
 
   {
