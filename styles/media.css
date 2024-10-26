@@ -1,10 +1,12 @@
-@media (width >= 768px) {
+@media (width <= 768px) {
   :root {
     --space-between-elements: 20px;
   }
 
-  .picture-section-block {
-    color: aquamarine;
+  .page::before,
+  .page::after,
+  .wrapper-button {
+    display: none;
   }
 }
 

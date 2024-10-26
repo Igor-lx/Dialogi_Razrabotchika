@@ -7,7 +7,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;*/
-  height: 170vh;
+  height: 370vh;
   padding: var(--view-vertical-margin) var(--view-horizontal-margin)
     var(--view-vertical-margin) var(--view-horizontal-margin);
   color: var(--text-color);

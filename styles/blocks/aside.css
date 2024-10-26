@@ -39,19 +39,19 @@ html {
   cursor: default;
 }
 
+.theme-toggle_button {
+  top: var(--view-vertical-margin);
+  right: calc(var(--view-horizontal-margin) - var(--button-position));
+  width: 50px;
+  display: flex;
+}
+
 .copyright_button {
   bottom: var(--view-vertical-margin);
   left: calc(var(--view-horizontal-margin) - 65px);
   display: none;
   width: 45px;
   cursor: default;
-}
-
-.theme-toggle_button {
-  top: var(--view-vertical-margin);
-  right: calc(var(--view-horizontal-margin) - var(--button-position));
-  display: flex;
-  width: 50px;
 }
 
 .up-button {

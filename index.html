@@ -58,7 +58,7 @@
     <aside>
       <button
         type="button"
-        class="wrapper-button galaxy_button"
+        class="wrapper-button galaxy_button upscreen_button"
         tabindex="-1"
         aria-hidden="true"
       >
@@ -69,8 +69,17 @@
 
       <button
         type="button"
-        id="copyright"
-        class="wrapper-button copyright_button"
+        class="wrapper-button theme-toggle_button upscreen_button"
+        aria-label="переключить тему"
+      >
+        <svg class="aside_right_icon theme_icon" viewBox="0 0 24 24">
+          <use xlink:href="./images/svg/themes.svg#auto"></use>
+        </svg>
+      </button>
+
+      <button
+        type="button"
+        class="wrapper-button copyright_button downscreen_button"
         tabindex="-1"
         aria-hidden="true"
       >
@@ -81,18 +90,7 @@
 
       <button
         type="button"
-        class="wrapper-button theme-toggle_button"
-        aria-label="переключить тему"
-      >
-        <svg class="aside_right_icon theme_icon" viewBox="0 0 24 24">
-          <use xlink:href="./images/svg/themes.svg#auto"></use>
-        </svg>
-      </button>
-
-      <button
-        type="button"
-        id="up-button"
-        class="wrapper-button up-button"
+        class="wrapper-button up-button downscreen_button"
         aria-label="навех страницы"
         onclick="location.href='#top'"
       >
@@ -108,7 +106,6 @@
     <template>
       <button
         type=""
-        id=""
         class=""
         onclick=""
         tabindex=""
