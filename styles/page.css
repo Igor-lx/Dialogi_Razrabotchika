@@ -1,7 +1,6 @@
 @import url("./aside.css");
 
 .page {
-  position: relative;
   /*
   background-image: url("../images/");
   background-repeat: no-repeat;
@@ -13,9 +12,6 @@
     var(--view-vertical-margin) var(--view-horizontal-margin);
   color: var(--text-color);
   font-family: "IBM Plex Mono", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
   background-color: var(--backhround-color);
 }
 
