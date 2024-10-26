@@ -143,7 +143,7 @@ html {
 
 .galaxy_wrapper_button {
   position: fixed;
-  top:  calc(var(--view-vertical-margin) - 2px);
+  top: calc(var(--view-vertical-margin) - 2px);
   left: calc(var(--view-horizontal-margin) - 70px);
   display: flex;
   justify-content: center;
@@ -163,5 +163,29 @@ html {
   transition: var(--galaxy_hover_transform);
   transform: scale(0.2);
   opacity: 0;
-  
+}
+
+.copyright_wrapper_button {
+  position: fixed;
+  bottom: var(--view-vertical-margin);
+  left: calc(var(--view-horizontal-margin) - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  background-color: transparent;
+  width: 45px;
+  cursor: default;
+}
+
+.copyright_icon {
+  fill: var(--accent-color);
+  transition: transform 0.9s ease, opacity 0.4s linear;
+ 
+}
+
+.copyright_wrapper_button:hover .copyright_icon {
+  transition: var(--galaxy_hover_transform);
+  transform: scale(0.2);
+  opacity: 0;
 }
