@@ -1,9 +1,9 @@
-/* MAIN - DARK, MOBILE */
 html {
   scroll-behavior: smooth;
 }
 
 .page {
+  position: relative;
   padding: var(--view-vertical-margin) var(--view-horizontal-margin)
     var(--view-vertical-margin) var(--view-horizontal-margin);
   color: var(--text-color);
@@ -12,6 +12,12 @@ html {
   font-size: 18px;
   font-style: normal;
   background-color: var(--backhround-color);
+  /*
+  background-image: url("../images/");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;*/
 }
 
 .page::before,
@@ -34,11 +40,32 @@ html {
 
 /* --------------------------------------------------------------------- */
 .header {
-  display: grid;
-  grid-template-rows: 200px auto;
-  block-size: 300vh;
+  block-size: 60vh;
 }
+
+.title {
+  font-size: 22px;
+  font-style: italic;
+}
+
 /* --------------------------------------------------------------------- */
+
+.article_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fact_section {
+}
 
 /* --------------------------------------------------------------------- */
 .theme-toggle_button {
@@ -54,7 +81,6 @@ html {
 }
 
 .theme_icon {
-  border: 1px solid transparent;
   fill: var(--accent-color);
   transition: transform 0.2s linear;
 }
@@ -73,7 +99,6 @@ html {
 
 .up_icon {
   width: 37px;
-  border: 1px solid transparent;
   stroke: var(--accent-color);
   transition: transform 0.2s linear;
 }
@@ -114,4 +139,29 @@ html {
 .up-button:focus-visible {
   border-right: 1px solid var(--accent-color_focus-color);
   border-left: 1px solid var(--accent-color_focus-color);
+}
+
+.galaxy_wrapper_button {
+  position: fixed;
+  top:  calc(var(--view-vertical-margin) - 2px);
+  left: calc(var(--view-horizontal-margin) - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: default;
+}
+
+.galaxy_icon {
+  fill: var(--accent-color);
+  transition: transform 0.9s ease, opacity 0.4s linear;
+}
+
+.galaxy_wrapper_button:hover .galaxy_icon {
+  transition: var(--galaxy_hover_transform);
+  transform: scale(0.2);
+  opacity: 0;
+  
 }

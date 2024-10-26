@@ -25,37 +25,64 @@
 
   <body class="page light_theme">
     <header class="header">
-      <button type="button" id="theme-button" class="theme-toggle_button">
-        <svg class="theme_icon" viewBox="0 0 24 24">
-          <use xlink:href="./images/svg/themes.svg#auto"></use>
-        </svg>
-      </button>
-
-      <h1>
+      <h1 class="title">
         А вдруг мы живем в мире, написанном в качестве проектной работы молодым
         обучающимся разработчиком…?
       </h1>
     </header>
 
-    <main></main>
+    <main>
+      <article class="article_secton">
+        <ul class="article_list">
+          <!-- --------------------------------- template ------------------- -->
+          <li class="article_item">
+            <div class="fact_section">
+              <h2 class="fact">Факт:</h2>
+              <button type="button" class="like-button">like</button>
+              <img class="article__image" src="./images/street.png" alt="" />
+            </div>
+            <div class="story_section">
+              <p class="story_text">Привет, Серёг!</p>
+            </div>
+          </li>
+          <!-- --------------------------------------------------------------- -->
+        </ul>
+      </article>
+    </main>
 
     <footer class="footer">
       <p class="footer__copyright">© 2024 Dialogi-LX</p>
     </footer>
 
-    <!-- ---------------------------------- back to top button -------------------------------------------- -->
-    <button
-      type="button"
-      id="up-button"
-      class="up-button"
-      onclick="location.href='#top'"
-    >
-      <svg class="up_icon" viewBox="0 0 24 24">
-        <use xlink:href="./images/svg/arrow-up.svg#up"></use>
-      </svg>
-    </button>
+    <aside>
+      <button type="button" class="galaxy_wrapper_button" aria-hidden="true">
+        <svg class="galaxy_icon" viewBox="0 0 70 70">
+          <use xlink:href="./images/svg/galaxy.svg#galaxy"></use>
+        </svg>
+      </button>
 
-    <!-- --------------------------------------------------------------------------------------------------- -->
+      <button
+        type="button"
+        class="theme-toggle_button"
+        aria-label="переключить тему"
+      >
+        <svg class="theme_icon" viewBox="0 0 24 24">
+          <use xlink:href="./images/svg/themes.svg#auto"></use>
+        </svg>
+      </button>
+
+      <button
+        type="button"
+        id="up-button"
+        class="up-button"
+        aria-label="навех страницы"
+        onclick="location.href='#top'"
+      >
+        <svg class="up_icon" viewBox="0 0 24 24">
+          <use xlink:href="./images/svg/arrow-up.svg#up"></use>
+        </svg>
+      </button>
+    </aside>
 
     <script src="./scripts/themes.js"></script>
     <script src="./scripts/scroll.js"></script>

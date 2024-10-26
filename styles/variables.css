@@ -16,4 +16,6 @@
   --view-vertical-margin: 50px;
   --view-horizontal-margin: 80px;
   --button-position: 60px;
+
+  --galaxy_hover_transform: transform 0.3s ease, opacity 0.3s linear;
 }
