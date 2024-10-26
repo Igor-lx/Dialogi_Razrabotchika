@@ -34,18 +34,22 @@
     <main>
       <article class="article_secton">
         <ul class="article_list">
-          <!-- --------------------------------- template ------------------- -->
+          <!-- ----------------------------------------------- template ------------ -->
           <li class="article_item">
             <div class="fact_section">
               <h2 class="fact">Факт:</h2>
-              <button type="button" class="like-button">like</button>
-              <img class="article__image" src="./images/street.png" alt="" />
+              <!-- <button type="button" class="like-button">like</button>-->
+              <img
+                class="article__image"
+                src="./images//pictures/street.png"
+                alt=""
+              />
             </div>
             <div class="story_section">
               <p class="story_text">Привет, Серёг!</p>
             </div>
           </li>
-          <!-- --------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
         </ul>
       </article>
     </main>
@@ -54,25 +58,37 @@
       <p class="footer__copyright">© 2024 Dialogi-LX</p>
     </footer>
 
+    <!-- ------------------------------------------------------------------------- ASIDE --------------------- -->
     <aside>
-      <button type="button" class="galaxy_wrapper_button" aria-hidden="true">
-        <svg class="galaxy_icon" viewBox="0 0 70 70">
+      <button
+        type="button"
+        class="wrapper-button galaxy_button"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <svg class="aside_left_icon" viewBox="0 0 70 70">
           <use xlink:href="./images/svg/galaxy.svg#galaxy"></use>
         </svg>
       </button>
 
-      <button type="button"  id="copyright" class="copyright_wrapper_button" aria-hidden="true">
-        <svg class="copyright_icon" viewBox="0 0 36 32">
+      <button
+        type="button"
+        id="copyright"
+        class="wrapper-button copyright_button"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <svg class="aside_left_icon" viewBox="0 0 36 32">
           <use xlink:href="./images/svg/copyright.svg#copyright"></use>
         </svg>
       </button>
 
       <button
         type="button"
-        class="theme-toggle_button"
+        class="wrapper-button theme-toggle_button"
         aria-label="переключить тему"
       >
-        <svg class="theme_icon" viewBox="0 0 24 24">
+        <svg class="aside_right_icon theme_icon" viewBox="0 0 24 24">
           <use xlink:href="./images/svg/themes.svg#auto"></use>
         </svg>
       </button>
@@ -80,15 +96,17 @@
       <button
         type="button"
         id="up-button"
-        class="up-button"
+        class="wrapper-button up-button"
         aria-label="навех страницы"
         onclick="location.href='#top'"
       >
-        <svg class="up_icon" viewBox="0 0 24 24">
+        <svg class="aside_right_icon up_icon" viewBox="0 0 24 24">
           <use xlink:href="./images/svg/arrow-up.svg#up"></use>
         </svg>
       </button>
     </aside>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
 
     <script src="./scripts/themes.js"></script>
     <script src="./scripts/scroll.js"></script>
