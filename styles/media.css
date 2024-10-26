@@ -1,51 +1,12 @@
 @media (width >= 768px) {
   :root {
     --space-between-elements: 20px;
-    --main-title-header-margin: -20px;
-    --margin-block-end-header-aside: 60px;
-    --margin-block-end-section: 80px;
-    --main-section-flex-direction: row; /* секция: заголовок-блоки*/
-    --main-section-specific-flex-direction: column; /*для специфичного выравнивания секции */
-    --font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --title-header-width: 364px;
-    --main-section__block__title-width: 236px;
   }
 
   .picture-section-block {
-    grid-template-columns: repeat(3, auto);
-    --margin-block-end-header-aside: 20px;
-  }
-
-  .picture-section__pic-sunset,
-  .picture-section__pic-street {
-    grid-column: span 2;
-  }
-
-  .picture-section__pic-icecream,
-  .picture-section__pic-tape {
-    grid-row: span 2;
+    color: aquamarine;
   }
 }
 
 @media (width >= 1024px) {
-  :root {
-    --menu-flex-direction: row;
-    --main-section__block-specific-flex-direction: row; /*для специфичного выравнивания блока */
-    --title-header-width: 491px;
-    --main-section__block__title-width: 315px;
-  }
-
-  .header__theme-menu {
-    justify-self: center;
-    align-self: start;
-  }
-
-  .article-specific {
-    min-width: 315px;
-  }
-
-  .main-section__block_item {
-    flex-grow: 1;
-    flex-basis: 315px;
-  }
 }

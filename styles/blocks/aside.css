@@ -83,7 +83,7 @@ html {
 
 .wrapper-button:hover .aside_left_icon {
   opacity: 0;
-  transition: var(--galaxy_hover_transform);
+  transition: var(--aside_left_hover_transform);
   transform: scale(0.2);
 }
 

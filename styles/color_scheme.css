@@ -1,16 +1,7 @@
-/*
-.page.light_theme {
-  --theme-icon-color: var(--theme-icon__light-theme_color);
-  --theme-icon-focus-color: var(--theme-icon__light-theme_focus-color);
-  color: var(--light-teme__text_color);
-  background-color: var(--light-teme__bg_color);
-  
-} */
-
 .page.dark_theme {
   --accent-color: var(--accent-color__dark-theme);
-  --accent-color_focus-color: var(--accent-color__dark-theme_focus-color);
+  --accent-color_focus-color: var(--accent-color_focus-color__dark-theme);
   --text-color: var(--text-color__dark-theme);
   --backhround-color: var(--backhround-color__dark-theme);
-  --galaxy_hover_transform: transform 0.4s ease, opacity 0.5s linear;
+  --aside_left_hover_transform: var(--aside_left_hover_transform__dark-theme);
 }

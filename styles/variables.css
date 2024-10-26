@@ -1,11 +1,10 @@
-/* MAIN - DARK, MOBILE*/
-
 :root {
+  /* ------------------------------------------------------------------ Themes-related ------------------*/
   --accent-color: black;
   --accent-color__dark-theme: rgba(24, 217, 27, 0.9);
 
   --accent-color_focus-color: lightgray;
-  --accent-color__dark-theme_focus-color: rgba(24, 217, 27, 0.5);
+  --accent-color_focus-color__dark-theme: rgba(24, 217, 27, 0.5);
 
   --text-color: #545454;
   --text-color__dark-theme: #fefdf6;
@@ -13,9 +12,13 @@
   --backhround-color: #fefdf6;
   --backhround-color__dark-theme: #000;
 
+  --aside_left_hover_transform: transform 0.3s ease, opacity 0.3s linear;
+  --aside_left_hover_transform__dark-theme: transform 0.4s ease,
+    opacity 0.5s linear;
+
+  /* ---------------------------------------------------------------------------------------------------*/
+
   --view-vertical-margin: 50px;
   --view-horizontal-margin: 80px;
   --button-position: 60px;
-
-  --galaxy_hover_transform: transform 0.3s ease, opacity 0.3s linear;
 }
