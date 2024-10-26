@@ -31,7 +31,6 @@ html {
   width: 55px;
   background-color: transparent;
   border: 1px solid red;
-  
 }
 
 .galaxy_button {
@@ -40,7 +39,14 @@ html {
   display: flex;
   width: 55px;
   cursor: default;
- 
+}
+
+.galaxy_button_test {
+  top: calc(var(--view-vertical-margin) - 2px);
+  left: calc(var(--view-horizontal-margin) + 70px);
+  display: flex;
+  width: 55px;
+  cursor: default;
 }
 
 .theme-toggle_button {
@@ -56,7 +62,6 @@ html {
   display: none;
   width: 45px;
   cursor: default;
-
 }
 
 .up-button {
