@@ -1,0 +1,101 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------------------------------------------------------------------  ЛИНИИ --- */
+.page::before,
+.page::after {
+  content: "";
+  position: fixed;
+  top: var(--view-vertical-margin);
+  bottom: var(--view-vertical-margin);
+  width: 1px;
+  background-color: var(--accent-color_focus-color);
+}
+
+.page::before {
+  left: var(--view-horizontal-margin);
+}
+
+.page::after {
+  right: var(--view-horizontal-margin);
+}
+
+/* ---------------------------------------------------------------------  ASIDE КНОПКИ --- */
+
+.wrapper-button {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.galaxy_button {
+  top: calc(var(--view-vertical-margin) - 2px);
+  left: calc(var(--view-horizontal-margin) - 70px);
+  display: flex;
+  width: 55px;
+  cursor: default;
+}
+
+.copyright_button {
+  bottom: var(--view-vertical-margin);
+  left: calc(var(--view-horizontal-margin) - 65px);
+  display: none;
+  width: 45px;
+  cursor: default;
+}
+
+.theme-toggle_button {
+  top: var(--view-vertical-margin);
+  right: calc(var(--view-horizontal-margin) - var(--button-position));
+  display: flex;
+  width: 50px;
+}
+
+.up-button {
+  right: calc(var(--view-horizontal-margin) - var(--button-position));
+  bottom: var(--view-vertical-margin);
+  display: none;
+  width: 50px;
+}
+
+.aside_left_icon {
+  fill: var(--accent-color);
+  transition: transform 0.9s ease, opacity 0.4s linear;
+}
+
+.aside_right_icon {
+  transition: transform 0.2s linear;
+}
+
+.theme_icon {
+  fill: var(--accent-color);
+}
+
+.up_icon {
+  width: 37px;
+  stroke: var(--accent-color);
+}
+
+/* ---------------------------------------------------------------------  СОСТОЯНИЯ --- */
+
+.wrapper-button:hover .aside_left_icon {
+  opacity: 0;
+  transition: var(--galaxy_hover_transform);
+  transform: scale(0.2);
+}
+
+.wrapper-button:hover .aside_right_icon {
+  transform: scale(1.2);
+}
+
+.wrapper-button:focus {
+  outline: none;
+}
+
+.wrapper-button:focus-visible {
+  border-right: 1px solid var(--accent-color_focus-color);
+  border-left: 1px solid var(--accent-color_focus-color);
+}
